@@ -8,8 +8,8 @@ module "action-secret" {
 }
 
 module "action-variables" {
-  source  = "c0x12c/action-variable/github"
-  version = "~> 1.0.1"
+  source  = "c0x12c/action-variables/github"
+  version = "~> 1.0.0"
 
   for_each   = var.repository_variables
   repository = each.key
